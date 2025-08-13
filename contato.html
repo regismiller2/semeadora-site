@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Semeadora</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <script src="./scripts.js" defer></script>
+  <link rel="icon" href="./static/trator-fundo-branco.png" type="image/x-icon">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #006738;">
+  <div class="container-fluid">
+
+    <!-- Logomarca -->
+    <a class="navbar-brand" href="#">
+      <img src="./static/trator-fundo-verde.png" alt="Logo A Semeadora" height="40" class="d-inline-block align-text-middle me-2">
+    </a>
+
+    <!-- Botão Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navegação e ícones -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="./index.html#quem-somos-header">Quem Somos</a></li>
+
+        <!-- Dropdown Nossos Produtos -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#produtos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Nossos Produtos
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="./index.html#pecas-trator">Peças para Trator</a></li>
+            <li><a class="dropdown-item" href="./index.html#produtos-implementos">Implementos Agrícolas</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+
+      <!-- Ícones redes sociais -->
+      <ul class="navbar-nav d-flex flex-row">
+        <li class="nav-item me-3">
+          <a href="https://wa.me/message/YQYM3P2HKSRLP1" target="_blank" class="nav-link p-0 text-white" title="WhatsApp">
+            <i class="bi bi-whatsapp fs-5"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://instagram.com/asemeadorabr" target="_blank" class="nav-link p-0 text-white" title="Instagram">
+            <i class="bi bi-instagram fs-5"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Card de Contato em Duas Colunas Centralizadas -->
+<div class="container my-5">
+  <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+    <div class="card-body p-4">
+
+      <!-- Título -->
+      <h3 class="card-title text-center fw-bold mb-4" style="color: #006738;">
+        <i class="bi bi-telephone-fill me-2"></i>Fale Conosco
+      </h3>
+
+      <div class="row text-center">
+
+        <!-- Endereço -->
+        <div class="col-md-6 mb-4">
+          <h5 class="fw-bold mb-3" style="color: #006738;">
+            <i class="bi bi-geo-alt-fill me-2"></i>Endereço
+          </h5>
+          <p class="mb-0">
+            <a href="https://www.google.com/maps/search/?api=1&query=BR-116,+km+12,+nº+2554,+Parque+Santa+Maria,+Fortaleza,+CE,+60850-012"
+               target="_blank"
+               class="text-decoration-none"
+               style="color: #333;">
+              BR-116, km 12, nº 2554<br>
+              Parque Santa Maria<br>
+              Fortaleza – CE<br>
+              CEP 60850-012
+            </a>
+          </p>
+        </div>
+
+        <!-- Contatos -->
+        <div class="col-md-6 mb-4">
+          <h5 class="fw-bold mb-3" style="color: #006738;">
+            <i class="bi bi-person-lines-fill me-2"></i>Contatos
+          </h5>
+          <p class="mb-2"><i class="bi bi-telephone me-2 text-success"></i>(85) 3037-4464</p>
+          <p class="mb-2"><i class="bi bi-phone me-2 text-success"></i>(85) 99143-2822</p>
+          <p class="mb-0">
+            <i class="bi bi-envelope me-2 text-success"></i>
+            <a href="mailto:asemeadora@asemeadora.com.br" class="text-decoration-none" style="color: #333;">
+              asemeadora@asemeadora.com.br
+            </a>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Redes Sociais -->
+      <div class="text-center mt-3">
+        <a href="https://wa.me/message/YQYM3P2HKSRLP1"
+           target="_blank"
+           class="btn btn-lg me-2 text-white border-0"
+           style="background-color: #006738;">
+          <i class="bi bi-whatsapp me-1"></i> WhatsApp
+        </a>
+        <a href="https://instagram.com/asemeadorabr"
+           target="_blank"
+           class="btn btn-lg text-white border-0"
+           style="background-color: #006738;">
+          <i class="bi bi-instagram me-1"></i> Instagram
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<footer class="py-5" style="background-color: #006738; color: white;">
+  <div class="container">
+    <div class="row">
+
+      <!-- 1. Logo -->
+      <div class="col-12 col-md-3 mb-4 d-flex justify-content-center justify-content-md-start align-items-center">
+        <img src="./static/logo-fundo-verde.png" alt="Logo A Semeadora" height="150">
+      </div>
+
+      <!-- 2. Navegação -->
+      <div class="col-12 col-md-3 mb-4">
+        <h5 class="text-white">A Semeadora</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="./index.html#quem-somos-header" class="nav-link p-0 text-white">Quem somos</a></li>
+          <li class="nav-item mb-2"><a href="./index.html#pecas-trator" class="nav-link p-0 text-white">Nossos produtos</a></li>
+          <li class="nav-item mb-2"><a href="./contato.html" class="nav-link p-0 text-white">Contato</a></li>
+        </ul>
+      </div>
+
+      <!-- 3. Endereço -->
+      <div class="col-12 col-md-3 mb-4">
+        <h5 class="text-white">Endereço</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            
+            <a href="https://www.google.com/maps/place/A+SEMEADORA/@-3.8528235,-38.4942593,17.29z/data=!4m6!3m5!1s0x7c74f9be52d7e15:0xd8cce391d1f00c98!8m2!3d-3.8525275!4d-38.4957414!16s%2Fg%2F11gj2yv3x9?entry=ttu" target="_blank" class="text-white d-block">
+              <i class="bi bi-geo-alt-fill me-2"></i> BR-116, km 12, nº 2554<br>
+              Parque Santa Maria<br>
+              Fortaleza – CE<br>
+              CEP 60850-012
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 4. Contatos e redes -->
+      <div class="col-12 col-md-3 mb-4">
+        <h5 class="text-white">Contatos</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <i class="bi bi-telephone-fill me-2"></i>(85) 3037-4464 | (85) 99143-2822
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-envelope-fill me-2"></i>
+            <a href="mailto:asemeadora@asemeadora.com.br" class="text-white">asemeadora@asemeadora.com.br</a>
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-whatsapp me-2"></i>
+            <a href="wa.me/message/YQYM3P2HKSRLP1" target="_blank" class="text-white">WhatsApp</a>
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-instagram me-2"></i>
+            <a href="https://instagram.com/asemeadorabr" target="_blank" class="text-white">Instagram</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Linha inferior -->
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top border-light">
+      <p class="mb-0">© A Semeadora - Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

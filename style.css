@@ -1,0 +1,588 @@
+.navbar .nav-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ffcc00;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.show {
+  background-color: #006738;
+  color: #fff !important;
+}
+
+/* Hover e foco nos itens do dropdown */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item.active {
+  background-color: #006738;
+  color: #fff !important;
+}
+
+.faixa-verde{
+  background:#006738;        /* verde da faixa */
+}
+.faixa-verde .section-title{
+  color:white;              /* dourado */
+  font-weight:700;
+  letter-spacing:.5px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    color: #343a40;
+}
+
+    /* ===== Tema ===== */
+    :root{ --brand-green:#006738; --brand-gold:#d4af37; --ink:#0f172a; --muted:#475569; }
+    *,*::before,*::after{ box-sizing:border-box; }
+    body{ margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial; background:#f6f8f7; color:var(--ink); }
+    .container{ width:min(1120px,92%); margin-inline:auto; }
+
+    /* ===== Seção Quem Somos ===== */
+    .about-section{ position:relative; padding:0px 0 50px; overflow:hidden; }
+    /* fundo moderno: gradiente suave + blurs discretos */
+    .about-section{ background:
+      radial-gradient(800px 400px at 100% 0%, rgba(0,103,56,.08), transparent 60%),
+      radial-gradient(700px 320px at -10% 110%, rgba(212,175,55,.10), transparent 60%),
+      linear-gradient(180deg, #f8fbf9 0%, #f1f6f3 100%);
+    }
+    .band-full{ position:relative; margin:0 0 28px; }
+    .band-full::before{ content:""; position:absolute; left:50%; transform:translateX(-50%); width:100vw; top:0; bottom:0; background:var(--brand-green); z-index:-1; }
+    .section-title{ color:var(--brand-gold); font-weight:900; text-transform:uppercase; letter-spacing:.06em; text-align:center; padding:0px 0; margin:0; }
+
+    /* ===== Grid de dois cards ===== */
+    .about-grid{ display:grid; gap:22px; }
+    @media (min-width: 900px){ .about-grid{ grid-template-columns: 1fr 2fr; gap:28px; } }
+
+    /* ===== Cards ===== */
+    .about-card{ position:relative; background:#fff; border-radius:24px; border:1px solid #e8edf2; box-shadow:0 12px 30px rgba(16,24,40,.06); padding:28px; }
+    .about-card::after{ content:""; position:absolute; inset:0; border-radius:24px; pointer-events:none; background:linear-gradient(90deg, rgba(212,175,55,.45), rgba(212,175,55,0) 30%, rgba(212,175,55,0) 70%, rgba(212,175,55,.45)); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; padding:2px; }
+
+    /* ===== Card: Anos de estrada (esquerda) ===== */
+    .about-years{ display:grid; place-items:center; text-align:center; background:linear-gradient(180deg,#ffffff 0%,#fbfdfc 100%); }
+    .chip{ display:inline-flex; align-items:center; gap:8px; padding:6px 12px; border-radius:999px; font-weight:800; letter-spacing:.3px; color:var(--brand-green); background:rgba(0,103,56,.08); border:1px solid rgba(0,103,56,.25); }
+    .years-value{ margin:10px 0 4px; font-size:clamp(3rem, 6vw, 4.5rem); line-height:1; font-weight:900; background:linear-gradient(180deg, var(--brand-gold), #f7dfa6); -webkit-background-clip:text; color:transparent; }
+    .years-label{ text-transform:uppercase; letter-spacing:.12em; color:#1f2937; font-weight:800; }
+    .years-sub{ color:var(--muted); margin:8px 0 0; }
+
+    /* ===== Card: Informações (direita) ===== */
+    .about-heading{ margin:6px 0 10px; font-size:clamp(1.25rem, 1.1rem + 1vw, 1.75rem); line-height:1.25; }
+    .about-text{ margin:0; color:var(--muted); max-width:62ch; }
+    .about-location{ margin:12px 0 0; font-weight:700; color:var(--ink); }
+    .kpis{ display:grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap:12px; margin-top:14px; }
+    .kpi{ background:#f9fafb; border:1px solid #eef2f7; border-radius:14px; padding:12px; display:flex; align-items:center; gap:10px; }
+    .kpi svg{ width:24px; height:24px; flex:0 0 auto; color:var(--brand-green); }
+    .kpi b{ display:block; font-size:.98rem; line-height:1.1; }
+    .kpi span{ display:block; color:var(--muted); font-size:.85rem; }
+
+    .cta-row{ display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-top:16px; }
+    .btn{ appearance:none; border:0; border-radius:12px; padding:12px 14px; font-weight:800; cursor:pointer; text-decoration:none; display:inline-flex; align-items:center; gap:8px; }
+    .btn-whats{ background:var(--brand-green); color:#fff; }
+    .btn-whats:hover{ filter:brightness(1.05); }
+    .btn-ghost{ background:transparent; border:2px solid var(--brand-green); color:var(--brand-green); }
+
+    /* Responsivo */
+    @media (min-width: 1100px){ .about-card{ padding:32px; } }
+/* troque o caminho da imagem abaixo */
+#servicos{
+  /* camadas: máscara verde, escurecimento (50%), imagem */
+  background-image:
+    linear-gradient(rgba(0, 103, 56, .35), rgba(0, 103, 56, .35)), /* máscara verde #006738 ~35% */
+    linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)),         /* "opacidade" de 50% */
+    url("./static/fundos/imagem-aerea-plantacao-trator-azul.jpg");                                   /* sua imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:#fff; /* garante legibilidade */
+}
+
+/* seu título dourado permanece */
+#servicos .section-title{ color:#ffffff; }
+
+#servicos .icon {
+  width: 72px;      /* ajuste aqui */
+  height: auto;     /* evita deformar */
+  display: block;
+  margin: 0 auto 12px;
+}
+
+/* --- Seção "O que Trabalhamos" --- */
+.service-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.75rem;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.service-card .icon {
+    font-size: 4rem;
+    color: #0d6efd; /* Cor principal do Bootstrap */
+    margin-bottom: 1.5rem;
+}
+
+.service-card h3 {
+    font-weight: 600;
+    color: #212529;
+}
+
+/* =================================================================
+   ESTILOS PARA A SEÇÃO 'SOBRE' - VERSÃO VERTICAL
+   ================================================================== */
+
+/* Importar uma fonte moderna do Google Fonts (opcional, mas recomendado) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Gradiente invertido: de branco para verde */
+.sobre-semeadora-moderna-vertical {
+  padding: 100px 0;
+  background: linear-gradient(to bottom, #ffffff, #f0f8ff 30%, #006738 90%); /* Branco para verde, com transição suave */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Conteúdo da Introdução (Topo da Seção) */
+.sobre-intro-content .section-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #212529; /* Texto escuro para fundo branco */
+}
+
+.sobre-intro-content .lead {
+  font-size: 1.15rem;
+  color: #555; /* Cinza escuro para o subtítulo */
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Caixa de contador de Tradição */
+.tradition-counter-box {
+  display: inline-block;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  padding: 20px 40px;
+  border-radius: 12px;
+}
+
+.tradition-counter-box .counter-number {
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #006738; /* Número com a cor da marca */
+}
+
+.tradition-counter-box .counter-label {
+  display: block;
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+/* Linha que contém os pilares de destaque */
+.pilares-row {
+    border-top: 1px solid rgba(0, 103, 56, 0.2); /* Linha divisória sutil */
+}
+
+/*
+  ### OS PILARES COM COR DE DESTAQUE ###
+  Estes são os cards principais na parte inferior
+*/
+.pilar-item-destaque {
+  background-color: #38a169; /* Verde vivo de destaque */
+  color: #ffffff; /* Todo texto dentro será branco */
+  padding: 40px 30px;
+  border-radius: 15px;
+  height: 100%;
+  box-shadow: 0 10px 30px rgba(0, 77, 42, 0.3);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pilar-item-destaque:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 77, 42, 0.4);
+}
+
+.pilar-item-destaque .pilar-icon {
+  font-size: 3rem;
+  color: #ffffff; /* Ícone branco */
+  margin-bottom: 20px;
+}
+
+.pilar-item-destaque .pilar-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.pilar-item-destaque .pilar-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+
+/* Botão Call-to-Action */
+.btn-semeadora {
+  background-color: #006738;
+  color: #ffffff;
+  border: 2px solid #006738;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.btn-semeadora:hover {
+  background-color: #004d2a;
+  border-color: #004d2a;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Responsividade */
+@media (max-width: 991.98px) {
+  .sobre-semeadora-moderna-vertical {
+    padding: 60px 0;
+  }
+  .sobre-intro-content .section-title {
+    font-size: 2.2rem;
+  }
+}
+/* ==================================================================
+===================================================================== */
+.counter-box {
+  background-color: rgba(0, 71, 38, 0.85);
+  backdrop-filter: blur(10px); /* Efeito de vidro fosco */
+  padding: 25px 40px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.counter-number {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #ffffff;
+  display: block;
+}
+
+.counter-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #c8e6c9; /* Verde mais claro */
+  display: block;
+}
+
+/* Grid com os pilares da empresa */
+.pilares-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 25px;
+}
+
+.pilar-item {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.pilar-item:hover {
+  transform: translateY(-8px);
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.pilar-icon {
+  font-size: 2.5rem;
+  color: #38a169; /* Cor do gradiente mais claro */
+  margin-bottom: 15px;
+}
+
+.pilar-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.pilar-text {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+}
+
+/* Botão de Call-to-Action personalizado */
+.btn-semeadora {
+  background-color: #ffffff;
+  color: #006738;
+  border: 2px solid #ffffff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn-semeadora:hover {
+  background-color: transparent;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 991.98px) {
+  .sobre-semeadora-moderna {
+    padding: 60px 0;
+  }
+  .sobre-content .section-title {
+    font-size: 2.2rem;
+  }
+  .sobre-img-container {
+    min-height: 300px;
+    margin-bottom: 30px; /* Espaço quando empilha */
+  }
+  .sobre-semeadora-moderna .text-center-lg-start {
+    text-align: center !important;
+  }
+}
+
+#myCarousel {
+    height: 60vh;
+}
+
+#myCarousel .carousel-inner,
+#myCarousel .carousel-item,
+#myCarousel .carousel-item img {
+    height: 100%;
+}
+
+#myCarousel .carousel-item img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+/* Centraliza todo o conteúdo do caption */
+#myCarousel .carousel-caption {
+    text-align: center;
+}
+
+/* Ajusta para não ficar muito próximo das bordas */
+#myCarousel .carousel-caption h1,
+#myCarousel .carousel-caption p {
+    margin-bottom: 0.5rem;
+}
+    body {
+    background-color: #f8f9fa;
+}
+.brand-carousel {
+    display: flex;
+    overflow-x: hidden;
+    gap: 30px;
+    padding: 20px;
+    width: 100%;       /* Garante que ocupe toda a largura */
+    box-sizing: border-box;
+}
+
+.brand-item {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.brand-item:hover {
+    transform: scale(1.08);
+}
+.brand-item img {
+    max-width: 100%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+/* Botão flutuante */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* Ícone e animação de balanço */
+.whatsapp-icon {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s;
+}
+.whatsapp-float:hover .whatsapp-icon {
+    animation: shake 0.6s ease-in-out;
+}
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(-15deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.whatsapp-popup {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 260px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: none;
+    animation: slideIn 0.5s ease;
+}
+
+/* Header verde com título centralizado */
+.popup-header {
+    background: #006738;
+    color: white;
+    padding: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative; /* necessário para posicionar o X */
+    text-align: center;
+    font-weight: bold;
+}
+
+.popup-close {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup-body {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.popup-btn {
+    display: block;
+    text-align: center;
+    background: #25D366;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.popup-btn:hover {
+    background: #1ebe5d;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+footer a {
+  color: white !important;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffcc00 !important; /* Destaque em amarelo */
+  text-decoration: underline;
+}
+
+
+/* ===== Base & tema ===== */
+:root{ --brand-green:#006738; --brand-gold:#d4af37; 
+  background-image:
+    linear-gradient(rgba(0, 103, 56, .35), rgba(0, 103, 56, .35)), /* máscara verde #006738 ~35% */
+    linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)),         /* "opacidade" de 50% */
+    url("./static/fundos/imagem-aerea-plantacao-trator-azul.jpg");   
+}
+*,*::before,*::after{ box-sizing:border-box; }
+body{ margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial; background:#f6f8fa; color:#0f172a; }
+.container{ width:min(1100px, 92%); margin-inline:auto; }
+
+/* ====== Componente: Carousel de produtos ====== */
+.product-carousel{ --gap:16px; --per-page:4; padding-block:28px; padding-inline:30px;}
+.pc-header{ display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; gap:16px; }
+.pc-title{ font-size:1.5rem; margin:0; color:var(--brand-green); }
+.pc-controls{ display:flex; align-items:center; gap:10px; }
+.pc-status{ min-width:56px; text-align:center; font-size:.95rem; color:#475569; }
+
+.pc-btn{ width:38px; height:38px; border:1px solid #e5e7eb; background:#fff; border-radius:10px; cursor:pointer; font-size:20px; line-height:36px; text-align:center; box-shadow:0 1px 2px rgba(0,0,0,.06); }
+.pc-btn:hover{ background:#f8fafc; }
+.pc-btn[disabled]{ opacity:.5; cursor:not-allowed; }
+
+.pc-viewport{ overflow:hidden; }
+.pc-track{ list-style:none; margin:0; padding:0; display:flex; gap:var(--gap); scroll-snap-type:x mandatory; overflow-x:auto; scroll-behavior:smooth; padding-bottom:6px; }
+.pc-card{ flex:0 0 calc((100% - (var(--gap) * (var(--per-page) - 1))) / var(--per-page)); background:#fff; border-radius:16px; box-shadow:0 6px 24px rgba(0,0,0,.06); overflow:hidden; scroll-snap-align:start; display:flex; flex-direction:column; }
+.pc-card img{ width:180px; height:auto; object-fit:cover; display:block; background:#e5e7eb; align-self: center;}
+.pc-card-body{ padding:12px; display:grid; gap:6px; }
+.pc-card-title{ font-size:1rem; margin:0; }
+.pc-card-desc{ color:#475569; margin:0; font-size:.95rem; line-height:1.35; }
+.pc-card-cta{ margin-top:6px; padding:10px 12px; border:0; border-radius:10px; cursor:pointer; background:var(--brand-green); color:#fff; font-weight:700; }
+.pc-card-cta:hover{ filter:brightness(1.05); }
+
+/* ===== Responsividade: ajusta quantos por página ===== */
+@media (max-width: 1199px){ .product-carousel{ --per-page:3; } }
+@media (max-width: 991px){ .product-carousel{ --per-page:2; } }
+@media (max-width: 575px){ .product-carousel{ --per-page:1; } }
+
+/* Acessibilidade: reduzir animação */
+@media (prefers-reduced-motion: reduce){ .pc-track{ scroll-behavior:auto; } }

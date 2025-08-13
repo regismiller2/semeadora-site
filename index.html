@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Semeadora</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <script src="./scripts.js" defer></script>
+  <link rel="icon" href="./static/trator-fundo-branco.png" type="image/x-icon">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #006738;">
+  <div class="container-fluid">
+
+    <!-- Logomarca -->
+    <a class="navbar-brand" href="#">
+      <img src="./static/trator-fundo-verde.png" alt="Logo A Semeadora" height="40" class="d-inline-block align-text-middle me-2">
+    </a>
+
+    <!-- Botão Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navegação e ícones -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="#quem-somos-header">Quem Somos</a></li>
+
+        <!-- Dropdown Nossos Produtos -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#produtos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Nossos Produtos
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="./index.html#pecas-trator">Peças para Trator</a></li>
+            <li><a class="dropdown-item" href="./index.html#produtos-implementos">Implementos Agrícolas</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="./contato.html">Contato</a></li>
+      </ul>
+
+      <!-- Ícones redes sociais -->
+      <ul class="navbar-nav d-flex flex-row">
+        <li class="nav-item me-3">
+          <a href="https://wa.me/message/YQYM3P2HKSRLP1" target="_blank" class="nav-link p-0 text-white" title="WhatsApp">
+            <i class="bi bi-whatsapp fs-5"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://instagram.com/asemeadorabr" target="_blank" class="nav-link p-0 text-white" title="Instagram">
+            <i class="bi bi-instagram fs-5"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <img src="./static/home-carousel/1.png" class="d-block w-100" alt="Peças agrícolas A Semeadora">
+            <div class="container">
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <img src="./static/home-carousel/2.png" class="d-block w-100" alt="Peças para implementos">
+            <div class="container">
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+            <img src="./static/home-carousel/3.png" class="d-block w-100" alt="Peças para tratores">
+            <div class="container">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+    </button>
+</div>
+
+
+<div class="container-fluid py-5" id="quem-somos-header">
+    <div class="container-fluid faixa-verde my-4">
+      <div class="container">
+        <h2 class="section-title text-center m-0 py-3">Quem somos</h2>
+      </div>
+    </div>
+</div>
+
+ <!-- =================== QUEM SOMOS (duas colunas) =================== -->
+  <section id="quem-somos" class="about-section" aria-label="Quem somos">
+    <div class="container">
+      <div class="about-grid">
+        <!-- CARD ESQUERDA: Anos de estrada -->
+        <article class="about-card about-years" aria-label="Anos de estrada">
+          <span class="chip">🌾 Desde 2006</span>
+          <div class="years-value"><span id="yearsCount">19</span>+</div>
+          <div class="years-label">Anos de estrada</div>
+          <p class="years-sub">Ao lado do produtor, de norte a sul do Ceará.</p>
+        </article>
+
+        <!-- CARD DIREITA: Informações -->
+        <article class="about-card about-info" itemscope itemtype="https://schema.org/Organization">
+          <h3 class="about-heading" itemprop="name">A Semeadora — peças para tratores e implementos agrícolas</h3>
+          <p class="about-text" itemprop="description">
+            Desde 2006, atendemos clientes com um catálogo completo de <strong>peças para tratores</strong> e <strong>implementos agrícolas</strong>, suporte ágil e marcas de confiança.
+          </p>
+
+          <div class="kpis">
+            <div class="kpi">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="17" r="3"/><circle cx="17" cy="17" r="3"/><path d="M3 17h2m14 0h2M5 17V9a2 2 0 0 1 2-2h5l2 2h3a2 2 0 0 1 2 2v6"/></svg>
+              <div><b>Tratores</b><span>peças e reposição</span></div>
+            </div>
+            <div class="kpi">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+              <div><b>Implementos</b><span>grades, arados, etc.</span></div>
+            </div>
+            <div class="kpi">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div><b>BR‑116</b><span>Fortaleza • CE</span></div>
+            </div>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn btn-whats" href="https://wa.me/message/YQYM3P2HKSRLP1" target="_blank" rel="noopener">Fale no WhatsApp</a>
+            <a class="btn btn-ghost" href="https://maps.google.com/?q=BR-116, Fortaleza - CE" target="_blank" rel="noopener">Ver no mapa</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+<section id="servicos" class="py-5">
+    <div class="container">
+    <div class="container-fluid faixa-verde my-4">
+      <div class="container">
+        <h2 class="section-title text-center m-0 py-3">Trabalhamos com</h2>
+      </div>
+    </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-6 mb-4">
+                <div class="service-card">
+                    <img src="./static/trator-icon.png" alt="Tratores" class="icon">
+                    <h3>Peças para Tratores</h3>
+                    <p class="text-muted">Oferecemos um vasto catálogo de peças de reposição para as principais marcas de tratores do mercado. Garantia de qualidade e durabilidade.</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 mb-4">
+                <div class="service-card">
+                    <img src="./static/arado-icon.png" alt="Implementos" class="icon">
+                    <h3>Implementos Agrícolas</h3>
+                    <p class="text-muted">Encontre arados, grades, plantadeiras e outros implementos essenciais para otimizar sua produção agrícola e garantir uma colheita de sucesso.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+
+<div class="container-fluid py-5">
+    <div class="container-fluid faixa-verde my-4">
+      <div class="container">
+        <h2 class="section-title text-center m-0 py-3" id="pecas-trator">Peças para Tratores</h2>
+      </div>
+    </div>
+
+    <!-- =================== CAROUSEL 4 em 4 =================== -->
+    <section class="product-carousel" aria-label="Produtos">
+      <div class="pc-header">
+        <h2 class="pc-title">Algumas de nossas peças:</h2>
+        <div class="pc-controls">
+          <button class="pc-btn pc-prev" aria-label="Anterior" title="Anterior">‹</button>
+          <span class="pc-status" aria-live="polite"><span class="pc-page">1</span>/<span class="pc-pages">1</span></span>
+          <button class="pc-btn pc-next" aria-label="Próximo" title="Próximo">›</button>
+        </div>
+      </div>
+
+      <div class="pc-viewport" tabindex="0">
+        <ul class="pc-track">
+          <!-- Troque as imagens/infos pelos seus produtos reais -->
+          <li class="pc-card">
+            <img src="./static/produtos-trator/planetaria.png" alt="Produto 1">
+            <div class="pc-card-body">
+              <h3 class="pc-card-title">Conjunto Planetária</h3>
+              <p class="pc-card-desc">Eixo dianteiro 4x4 ZF APL 335/ 345/ 350 MF/VT/FORD/ J. DEERE</p>
+              <button class="pc-card-cta">Ver detalhes</button>
+            </div>
+          </li>
+          <li class="pc-card">
+            <img src="./static/produtos-trator/engrenagem-cardan-agricola.png" alt="Produto 2">
+            <div class="pc-card-body">
+              <h3 class="pc-card-title">Engrenagem Cardan Agrícola</h3>
+              <p class="pc-card-desc">De todas as séries para equipamento agrícola.</p>
+              <button class="pc-card-cta">Ver detalhes</button>
+            </div>
+          </li>
+                    <li class="pc-card">
+            <img src="./static/produtos-trator/planetaria.png" alt="Produto 1">
+            <div class="pc-card-body">
+              <h3 class="pc-card-title">Conjunto Planetária</h3>
+              <p class="pc-card-desc">Eixo dianteiro 4x4 ZF APL 335/ 345/ 350 MF/VT/FORD/ J. DEERE</p>
+              <button class="pc-card-cta">Ver detalhes</button>
+            </div>
+          </li>
+          <li class="pc-card">
+            <img src="./static/produtos-trator/engrenagem-cardan-agricola.png" alt="Produto 2">
+            <div class="pc-card-body">
+              <h3 class="pc-card-title">Engrenagem Cardan Agrícola</h3>
+              <p class="pc-card-desc">De todas as séries para equipamento agrícola.</p>
+              <button class="pc-card-cta">Ver detalhes</button>
+            </div>
+          </li>
+                    <li class="pc-card">
+            <img src="./static/produtos-trator/planetaria.png" alt="Produto 1">
+            <div class="pc-card-body">
+              <h3 class="pc-card-title">Conjunto Planetária</h3>
+              <p class="pc-card-desc">Eixo dianteiro 4x4 ZF APL 335/ 345/ 350 MF/VT/FORD/ J. DEERE</p>
+              <button class="pc-card-cta">Ver detalhes</button>
+            </div>
+          </li>
+          <li class="pc-card">
+            <img src="./static/produtos-trator/engrenagem-cardan-agricola.png" alt="Produto 2">
+            <div class="pc-card-body">
+              <h3 class="pc-card-title">Engrenagem Cardan Agrícola</h3>
+              <p class="pc-card-desc">De todas as séries para equipamento agrícola.</p>
+              <button class="pc-card-cta">Ver detalhes</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="brand-carousel" id="brandCarousel" style="overflow-x:auto; white-space:nowrap;">
+        <div class="brand-item"><img src="./static/trator-logo-marcas/Agrale.png" alt="Agrales"></div>
+        <div class="brand-item"><img src="./static/trator-logo-marcas/cbt.png" alt="cbt"></div>
+        <div class="brand-item"><img src="./static/trator-logo-marcas/Ford.png" alt="Ford"></div>
+        <div class="brand-item"><img src="./static/trator-logo-marcas/john-deere.png" alt="john-deere"></div>
+        <div class="brand-item"><img src="./static/trator-logo-marcas/massey-fergunson.png" alt="massey-fergunson"></div>
+        <div class="brand-item"><img src="./static/trator-logo-marcas/new holland.png" alt="new holland"></div>
+        <div class="brand-item"><img src="./static/trator-logo-marcas/valmet.png" alt="valmet"></div>
+        <div class="brand-item"><img src="./static/trator-logo-marcas/Valtra.png" alt="Valtra"></div>
+        <div class="brand-item"><img src="./static/trator-logo-marcas/yanmar.png" alt="yanmar"></div>
+    </div>
+</div>
+
+<div class="container-fluid py-5">
+    <div class="container-fluid faixa-verde my-4">
+      <div class="container">
+        <h2 class="section-title text-center m-0 py-3" id="produtos-implementos">Implementos agrícolas</h2>
+      </div>
+    </div>
+
+    <!-- =================== CAROUSEL 4 em 4 =================== -->
+    <section class="product-carousel" aria-label="Produtos">
+      <div class="pc-header">
+        <h2 class="pc-title">Alguns de nossos implementos:</h2>
+        <div class="pc-controls">
+          <button class="pc-btn pc-prev" aria-label="Anterior" title="Anterior">‹</button>
+          <span class="pc-status" aria-live="polite"><span class="pc-page">1</span>/<span class="pc-pages">1</span></span>
+          <button class="pc-btn pc-next" aria-label="Próximo" title="Próximo">›</button>
+        </div>
+      </div>
+
+      <div class="pc-viewport" tabindex="0">
+        <ul class="pc-track">
+          <!-- Troque as imagens/infos pelos seus produtos reais -->
+          <li class="pc-card">
+            <img src="./static/produtos-implementos/escarificador_stara-31.png" alt="Produto 1">
+            <div class="pc-card-body">
+              <h3 class="pc-card-title">Escarificador Stara 31</h3>
+                <p class="pc-card-desc">Escarificador Stara 31: Equipamento robusto para preparo do solo, ideal para romper camadas compactadas e melhorar a infiltração de água. Indicado para diversas culturas, proporciona maior eficiência e produtividade no campo.</p>
+              <button class="pc-card-cta">Ver detalhes</button>
+            </div>
+          </li>
+          <li class="pc-card">
+            <img src="./static/produtos-implementos/grade-aradora.png" alt="Produto 2">
+            <div class="pc-card-body">
+              <h3 class="pc-card-title">Grade Aradora</h3>
+              <p class="pc-card-desc">Grade Aradora: Equipamento essencial para o preparo do solo, garantindo uma aração eficiente e uniforme. Ideal para diversas culturas, melhora a aeração e a infiltração de água no solo.</p>
+              <button class="pc-card-cta">Ver detalhes</button>
+            </div>
+          </li>
+          <li class="pc-card">
+            <img src="./static/produtos-implementos/escarificador_stara-31.png" alt="Produto 1">
+            <div class="pc-card-body">
+              <h3 class="pc-card-title">Escarificador Stara 31</h3>
+                <p class="pc-card-desc">Escarificador Stara 31: Equipamento robusto para preparo do solo, ideal para romper camadas compactadas e melhorar a infiltração de água. Indicado para diversas culturas, proporciona maior eficiência e produtividade no campo.</p>
+              <button class="pc-card-cta">Ver detalhes</button>
+            </div>
+          </li>
+          <li class="pc-card">
+            <img src="./static/produtos-implementos/grade-aradora.png" alt="Produto 2">
+            <div class="pc-card-body">
+              <h3 class="pc-card-title">Grade Aradora</h3>
+              <p class="pc-card-desc">Grade Aradora: Equipamento essencial para o preparo do solo, garantindo uma aração eficiente e uniforme. Ideal para diversas culturas, melhora a aeração e a infiltração de água no solo.</p>
+              <button class="pc-card-cta">Ver detalhes</button>
+            </div>
+          </li>
+          <li class="pc-card">
+            <img src="./static/produtos-implementos/escarificador_stara-31.png" alt="Produto 1">
+            <div class="pc-card-body">
+              <h3 class="pc-card-title">Escarificador Stara 31</h3>
+                <p class="pc-card-desc">Escarificador Stara 31: Equipamento robusto para preparo do solo, ideal para romper camadas compactadas e melhorar a infiltração de água. Indicado para diversas culturas, proporciona maior eficiência e produtividade no campo.</p>
+              <button class="pc-card-cta">Ver detalhes</button>
+            </div>
+          </li>
+          <li class="pc-card">
+            <img src="./static/produtos-implementos/grade-aradora.png" alt="Produto 2">
+            <div class="pc-card-body">
+              <h3 class="pc-card-title">Grade Aradora</h3>
+              <p class="pc-card-desc">Grade Aradora: Equipamento essencial para o preparo do solo, garantindo uma aração eficiente e uniforme. Ideal para diversas culturas, melhora a aeração e a infiltração de água no solo.</p>
+              <button class="pc-card-cta">Ver detalhes</button>
+            </div>
+          </li>
+                    <li class="pc-card">
+            <img src="./static/produtos-implementos/escarificador_stara-31.png" alt="Produto 1">
+            <div class="pc-card-body">
+              <h3 class="pc-card-title">Escarificador Stara 31</h3>
+                <p class="pc-card-desc">Escarificador Stara 31: Equipamento robusto para preparo do solo, ideal para romper camadas compactadas e melhorar a infiltração de água. Indicado para diversas culturas, proporciona maior eficiência e produtividade no campo.</p>
+              <button class="pc-card-cta">Ver detalhes</button>
+            </div>
+          </li>
+          <li class="pc-card">
+            <img src="./static/produtos-implementos/grade-aradora.png" alt="Produto 2">
+            <div class="pc-card-body">
+              <h3 class="pc-card-title">Grade Aradora</h3>
+              <p class="pc-card-desc">Grade Aradora: Equipamento essencial para o preparo do solo, garantindo uma aração eficiente e uniforme. Ideal para diversas culturas, melhora a aeração e a infiltração de água no solo.</p>
+              <button class="pc-card-cta">Ver detalhes</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="brand-carousel" id="brandCarouselImplemento" style="overflow-x:auto; white-space:nowrap;">
+        <div class="brand-item"><img src="./static/implementos-logos-marcas/agritech.png" alt="agritech"></div>
+        <div class="brand-item"><img src="./static/implementos-logos-marcas/baldan.png" alt="baldan"></div>
+        <div class="brand-item"><img src="./static/implementos-logos-marcas/inroda.png" alt="inroda"></div>
+        <div class="brand-item"><img src="./static/implementos-logos-marcas/jacto.png" alt="jacto"></div>
+        <div class="brand-item"><img src="./static/implementos-logos-marcas/jan.png" alt="jan"></div>
+        <div class="brand-item"><img src="./static/implementos-logos-marcas/jf.png" alt="jf"></div>
+        <div class="brand-item"><img src="./static/implementos-logos-marcas/jumil.jpg" alt="jumil"></div>
+        <div class="brand-item"><img src="./static/implementos-logos-marcas/kamaq.jpg" alt="kamaq"></div>
+        <div class="brand-item"><img src="./static/implementos-logos-marcas/cemag.png" alt="cemag"></div>
+        <div class="brand-item"><img src="./static/implementos-logos-marcas/menta.png" alt="menta"></div>
+        <div class="brand-item"><img src="./static/implementos-logos-marcas/nogueira.png" alt="nogueira"></div>
+        <div class="brand-item"><img src="./static/implementos-logos-marcas/piccin.png" alt="piccin"></div>
+        <div class="brand-item"><img src="./static/implementos-logos-marcas/tatu.png" alt="tatu"></div>
+    </div>
+</div>
+
+<!-- Botão flutuante do WhatsApp -->
+<a href="https://wa.me/message/YQYM3P2HKSRLP1" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+</a>
+
+<!-- Pop-up institucional -->
+<div class="whatsapp-popup" id="whatsappPopup">
+    <div class="popup-header">
+        <span class="popup-title">💬 Fale Conosco</span>
+        <button class="popup-close" onclick="fecharPopup()">&times;</button>
+    </div>
+    <div class="popup-body">
+        <p>Olá! 😊 Somos da <strong>A Semeadora</strong>.  
+        Clique no botão abaixo e fale com a gente no WhatsApp!</p>
+        <a href="https://wa.me/message/YQYM3P2HKSRLP1" target="_blank" class="popup-btn">Falar no WhatsApp</a>
+    </div>
+</div>
+
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<footer class="py-5" style="background-color: #006738; color: white;">
+  <div class="container">
+    <div class="row">
+
+      <!-- 1. Logo -->
+      <div class="col-12 col-md-3 mb-4 d-flex justify-content-center justify-content-md-start align-items-center">
+        <img src="./static/logo-fundo-verde.png" alt="Logo A Semeadora" height="150">
+      </div>
+
+      <!-- 2. Navegação -->
+      <div class="col-12 col-md-3 mb-4">
+        <h5 class="text-white">A Semeadora</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="./index.html#quem-somos-header" class="nav-link p-0 text-white">Quem somos</a></li>
+          <li class="nav-item mb-2"><a href="./index.html#pecas-trator" class="nav-link p-0 text-white">Nossos produtos</a></li>
+          <li class="nav-item mb-2"><a href="./contato.html" class="nav-link p-0 text-white">Contato</a></li>
+        </ul>
+      </div>
+
+      <!-- 3. Endereço -->
+      <div class="col-12 col-md-3 mb-4">
+        <h5 class="text-white">Endereço</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            
+            <a href="https://www.google.com/maps/place/A+SEMEADORA/@-3.8528235,-38.4942593,17.29z/data=!4m6!3m5!1s0x7c74f9be52d7e15:0xd8cce391d1f00c98!8m2!3d-3.8525275!4d-38.4957414!16s%2Fg%2F11gj2yv3x9?entry=ttu" target="_blank" class="text-white d-block">
+              <i class="bi bi-geo-alt-fill me-2"></i> BR-116, km 12, nº 2554<br>
+              Parque Santa Maria<br>
+              Fortaleza – CE<br>
+              CEP 60850-012
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 4. Contatos e redes -->
+      <div class="col-12 col-md-3 mb-4">
+        <h5 class="text-white">Contatos</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <i class="bi bi-telephone-fill me-2"></i>(85) 3037-4464 | (85) 99143-2822
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-envelope-fill me-2"></i>
+            <a href="mailto:asemeadora@asemeadora.com.br" class="text-white">asemeadora@asemeadora.com.br</a>
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-whatsapp me-2"></i>
+            <a href="wa.me/message/YQYM3P2HKSRLP1" target="_blank" class="text-white">WhatsApp</a>
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-instagram me-2"></i>
+            <a href="https://instagram.com/asemeadorabr" target="_blank" class="text-white">Instagram</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Linha inferior -->
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top border-light">
+      <p class="mb-0">© A Semeadora - Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
