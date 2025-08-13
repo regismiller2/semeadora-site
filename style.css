@@ -376,7 +376,7 @@ body {
 }
 
 #myCarousel {
-    height: 60vh;
+    height: auto;
 }
 
 #myCarousel .carousel-inner,
